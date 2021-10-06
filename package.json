@@ -1,8 +1,8 @@
 {
-  "name": "template-react-native-tam-phuc",
+  "name": "OrderShipping",
   "version": "0.0.1",
   "description": "React Native Template",
-  "repository": "git@github.com:nhandora123/template-react-native-tam-phuc.git",
+  "repository": "git@github.com:nhandora123/ordershipping.git",
   "author": "Phan Tran Hieu Nhan <hieunhan2000@gmail.com>",
   "license": "MIT"
 }

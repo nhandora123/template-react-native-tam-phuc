@@ -3,7 +3,19 @@
  */
 
 import {AppRegistry} from 'react-native';
-import App from './App';
+import App from './src/router/App';
 import {name as appName} from './app.json';
+import configureStore from './src/redux/store';
+import React, { useEffect } from 'react'
+import { Provider as StoreProvider } from 'react-redux';
+import {typography} from './src/utils/typography'
 
-AppRegistry.registerComponent(appName, () => App);
+typography()
+const app = () => (
+    <StoreProvider store={configureStore}>
+      <App />
+    </StoreProvider>
+  );
+
+console.disableYellowBox = true;
+AppRegistry.registerComponent(appName, () => app);
