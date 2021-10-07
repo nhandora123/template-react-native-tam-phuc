@@ -14,8 +14,6 @@ import {
 import { CameraKitCameraScreen } from 'react-native-camera-kit';
 import Ripple from 'react-native-material-ripple';
 import Sound from 'react-native-sound';
-import { getSaleInvoiceBycode } from '../../screens/homeScreen/detailEnvoice/GetSaleInvoiceByCode';
-import { getSaleInvoiceNotPrintBycode } from '../../screens/homeScreen/detailEnvoice/GetSaleInvoiceNotPrintByCode';
 import { DialogError } from '../../components/modal/DialogError';
 import lodash from 'lodash';
 

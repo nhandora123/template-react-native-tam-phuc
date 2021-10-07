@@ -1,7 +1,6 @@
 import React from 'react'
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {Image,StyleSheet } from 'react-native';
-import Map from '../screens/map/Map.view';
 import Setting from '../screens/setting/Setting.view';
 import HomeStack from '../screens/homeScreen/HomeStack';
 import { HOMEICON, SETTINGICON, MAPICON } from '../assets';
@@ -18,19 +17,6 @@ export const BottomTab = (props: any)=> {
     initialRouteName='Trang chủ'
     screenOptions={{headerShown: false}}
     >
-      <Tab.Screen
-        name='Bản đồ'
-        component={Map}
-        options={{
-          tabBarIcon: ({color}) => (
-            <Image
-              source={MAPICON}
-              style={[styles.tabbarIcon, {tintColor: color}]}
-            />
-          ),
-        }}
-      />
-
       <Tab.Screen
         name={'Trang chủ'}
         component={HomeStack}

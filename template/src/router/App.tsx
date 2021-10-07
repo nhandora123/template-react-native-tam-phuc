@@ -13,10 +13,8 @@ import { actionInit } from '../utils/mainActions';
 import { apiConfigDefault } from '../constants';
 import { SplashMain } from '../components';
 import { system, modal, auth } from '../redux';
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import { DialogError } from '../components/modal/DialogError';
 import { type } from 'os';
-Icon.loadFont();
 
 const Stack = createStackNavigator();
 const App = (props: any) => {

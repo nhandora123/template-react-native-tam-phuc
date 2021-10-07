@@ -53,77 +53,10 @@ const Home = (props: any) => {
 }, []);
   return (
     <BackgroundBigScreen navigation={props.navigation}>
-      <ScrollView>
-        <View style={styles.groupButton}>
-          <Ripple
-            style={styles.buttonitem}
-            onPress={() => transportion('Waiting')}>
-            <View style={styles.VImageButton}>
-              <View style={styles.ImageViewButton}>
-                <Image
-                  style={styles.ImageButton}
-                  source={WAITINGINVOICEICONLIST}
-                />
-              </View>
-            </View>
-            <View style={styles.VtitleButton}>
-              <Text style={styles.titleButton}>1. Chờ nhận</Text>
-            </View>
-          </Ripple>
-          <Ripple
-            style={styles.buttonitem}
-            onPress={() => transportion('Acceptance')}>
-            <View style={styles.VImageButton}>
-              <View style={styles.ImageViewButton}>
-                <Image style={styles.ImageButton} source={RECIEVEDICON} />
-              </View>
-            </View>
-            <View style={styles.VtitleButton}>
-              <Text style={styles.titleButton}>2. Đã nhận</Text>
-            </View>
-          </Ripple>
-        </View>
-        <View style={styles.groupButton}>
-          <Ripple
-            style={styles.buttonitem}
-            onPress={() => transportion('Transportion')}>
-            <View style={styles.VImageButton}>
-              <View style={styles.ImageViewButton}>
-                <Image style={styles.ImageButton} source={DELIVERYMAN} />
-              </View>
-            </View>
-            <View style={styles.VtitleButton}>
-              <Text style={styles.titleButton}>3. Vận chuyển</Text>
-            </View>
-          </Ripple>
-          <Ripple
-            style={styles.buttonitem}
-            onPress={() => transportion('Submission')}>
-            <View style={styles.VImageButton}>
-              <View style={styles.ImageViewButton}>
-                <Image style={styles.ImageButton} source={FILE} />
-              </View>
-            </View>
-            <View style={styles.VtitleButton}>
-              <Text style={styles.titleButton}>4. Nộp phiếu</Text>
-            </View>
-          </Ripple>
-        </View>
-        <View style={styles.groupButton}>
-          <Ripple
-            style={styles.buttonitem}
-            onPress={() => transportion('Finish')}>
-            <View style={styles.VImageButton}>
-              <View style={styles.ImageViewButton}>
-                <Image style={styles.ImageButton} source={COMPLETEDTASK} />
-              </View>
-            </View>
-            <View style={styles.VtitleButton}>
-              <Text style={styles.titleButton}>5. Hoàn tất</Text>
-            </View>
-          </Ripple>
-        </View>
-      </ScrollView>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+    <Text style={{fontSize: 20}}>TRANG CHỦ</Text>
+    </View>
+      
     </BackgroundBigScreen>
   );
 };

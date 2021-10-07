@@ -132,7 +132,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.ordershipping"
+        applicationId "com.templatereactnativetamphuc"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 3
@@ -187,7 +187,6 @@ android {
 }
 
 dependencies {
-    + compile project(':rn-qr-generator')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules

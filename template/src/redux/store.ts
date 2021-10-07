@@ -10,7 +10,7 @@ const config = createWhitelistFilter('config', [
   'StoreID',
 ]);
 const auth = createWhitelistFilter('auth', [
-  'messAuth','profileInfo','isFinger'
+  'messAuth','profileInfo','isFinger', 'isLogin'
 ]);
 const persistConfig: any = {
   key: 'root',

@@ -18,7 +18,7 @@ import { BackgroundBig, ButtonCustom } from '../../components';
 import { TextInputCustom } from '../../components/userComponents';
 import Ripple from 'react-native-material-ripple';
 import { Fonts } from '../../constants';
-import { LOGO, EYE_HIDE, EYE_SHOW, ICONFINGERPRINT } from '../../assets';
+import { SOFTWAREVIETLOGO, LOGO, EYE_HIDE, EYE_SHOW, ICONFINGERPRINT } from '../../assets';
 import TouchID from 'react-native-touch-id';
 import Toast from 'react-native-toast-message';
 import { actionMain } from '../../utils/mainActions';
@@ -173,7 +173,7 @@ const Login = (props: any) => {
     <BackgroundBig>
       <ScrollView>
         <View style={styles.MainContainer}>
-          <Image source={LOGO} style={styles.iconMain} resizeMode={'contain'} />
+          <Image source={SOFTWAREVIETLOGO} style={styles.iconMain} resizeMode={'contain'} />
           <Text style={{ color: 'red', fontSize: hp('3') }}> Đăng Nhập Tài Khoản</Text>
           <TextInputCustom
             style={styles.topSpace}

@@ -60,8 +60,8 @@ export const SplashScreen = (props: any) => {
       useEffect(() => {
         CodePush.sync(
           {
-            deploymentKey:"t3PcS-tXBe8hBYdGn07t78fYT_LgPagHmA0-0"//android staging
-            // deploymentKey:"gYCBc2XWNXgG4Gy8mvACQRrCn2luwhNhYe_gc"//ios STAGING
+            // deploymentKey:"a7R2PY-TRgT0kgfsd8V0sieBW0Fx9jKRcYLwi"//android staging
+            deploymentKey:"t9Qyfw8jNzqsIQgh3k5rb1Sh1a3K24vMGLqoe"//ios STAGING
           },
           codePushStatusDidChange, null
         );
@@ -77,7 +77,7 @@ export const SplashScreen = (props: any) => {
   return (
     <BackgroundBig>
       <View style={styles.container}>
-        <Image source={LOGO} resizeMode={'contain'} style={styles.logoMain} />
+        <Image source={SOFTWAREVIETLOGO} resizeMode={'contain'} style={styles.logoMain} />
         <Image source={SOFTWAREVIETLOGO}></Image>
         <Text style={styles.nameApp}>ORDER SHIPPING</Text>
         <View style={{height: hp('5'), paddingTop: hp('10')}}> 

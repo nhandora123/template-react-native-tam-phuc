@@ -1,4 +1,4 @@
-rootProject.name = 'OrderShipping'
+rootProject.name = 'TemplateReactNativeTamPhuc'
 include ':rn-qr-generator'
 project(':rn-qr-generator').projectDir = new File(rootProject.projectDir, '../node_modules/rn-qr-generator/android')
 include ':react-native-svg'
